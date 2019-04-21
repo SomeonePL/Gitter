@@ -15,7 +15,7 @@ public class Gitter {
         this.repository_name = repository_name;
     }
 
-    public String recent(){
+    public void recent(){
         Reader finder = new Reader();
         for (int i = 1; i < 11; i++) {
             String url = "https://api.github.com/orgs/allegro/events?page=" + i;
@@ -23,10 +23,10 @@ public class Gitter {
             String new_repository = finder.read(url);
             if(new_repository != ""){
                 this.setRepository_name(new_repository);
-                return this.repository_name;
+                return;
             }
         }
 
-        return this.repository_name;
+
     }
 }
