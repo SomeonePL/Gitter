@@ -1,4 +1,6 @@
 package gitter.app;
+/*Original code created by stackoverflow user: https://stackoverflow.com/users/3438207/jenky
+* as an answer to this question: https://stackoverflow.com/questions/34923268/jackson-prettyprint-for-spring-4*/
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;
